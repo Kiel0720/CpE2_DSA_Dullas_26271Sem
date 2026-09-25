@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,13 +40,6 @@ namespace CpE2_DSA_Dullas_26271Sem
             formtoShowParent.Controls.Clear();
             formtoShowParent.Controls.Add(formToShow);
         }
-
-        private void btnLinkedlist_Click(object sender, EventArgs e)
-        {
-            Linkedlist linkedlist = new Linkedlist();
-            formShow(linkedlist, this.splitContainer2.Panel2);
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -54,6 +48,22 @@ namespace CpE2_DSA_Dullas_26271Sem
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnLinkedlist_Click_1(object sender, EventArgs e)
+        {
+            Linkedlist linkedlist = new Linkedlist();
+            formShow(linkedlist, this.splitContainer2.Panel2);
+        }
+
+        private void btnStack_Click(object sender, EventArgs e)
+        {
+            formShow(new Stack(), splitContainer2.Panel2);
+        }
+
+        private void btnQueue_Click(object sender, EventArgs e)
+        {
+            formShow(new Queue(), splitContainer2.Panel2);
         }
     }
 }

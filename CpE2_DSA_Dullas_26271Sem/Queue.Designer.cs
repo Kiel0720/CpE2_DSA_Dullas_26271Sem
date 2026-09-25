@@ -1,0 +1,183 @@
+﻿namespace CpE2_DSA_Dullas_26271Sem
+{
+    partial class Queue
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.gbQueue = new System.Windows.Forms.GroupBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnDequeue = new System.Windows.Forms.Button();
+            this.btnPeek = new System.Windows.Forms.Button();
+            this.btnCount = new System.Windows.Forms.Button();
+            this.btnContain = new System.Windows.Forms.Button();
+            this.btnEnqueue = new System.Windows.Forms.Button();
+            this.txtQueueValue = new System.Windows.Forms.TextBox();
+            this.lstQueue = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.gbQueue.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // gbQueue
+            // 
+            this.gbQueue.Controls.Add(this.label1);
+            this.gbQueue.Controls.Add(this.btnClear);
+            this.gbQueue.Controls.Add(this.btnDequeue);
+            this.gbQueue.Controls.Add(this.btnPeek);
+            this.gbQueue.Controls.Add(this.btnCount);
+            this.gbQueue.Controls.Add(this.btnContain);
+            this.gbQueue.Controls.Add(this.btnEnqueue);
+            this.gbQueue.Controls.Add(this.txtQueueValue);
+            this.gbQueue.Controls.Add(this.lstQueue);
+            this.gbQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbQueue.Location = new System.Drawing.Point(12, 12);
+            this.gbQueue.Name = "gbQueue";
+            this.gbQueue.Size = new System.Drawing.Size(779, 426);
+            this.gbQueue.TabIndex = 1;
+            this.gbQueue.TabStop = false;
+            this.gbQueue.Text = "Queue";
+            // 
+            // btnClear
+            // 
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(367, 172);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(87, 33);
+            this.btnClear.TabIndex = 10;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnDequeue
+            // 
+            this.btnDequeue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDequeue.Location = new System.Drawing.Point(274, 133);
+            this.btnDequeue.Name = "btnDequeue";
+            this.btnDequeue.Size = new System.Drawing.Size(87, 33);
+            this.btnDequeue.TabIndex = 9;
+            this.btnDequeue.Text = "Dequeue";
+            this.btnDequeue.UseVisualStyleBackColor = true;
+            this.btnDequeue.Click += new System.EventHandler(this.btnDequeue_Click);
+            // 
+            // btnPeek
+            // 
+            this.btnPeek.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPeek.Location = new System.Drawing.Point(367, 133);
+            this.btnPeek.Name = "btnPeek";
+            this.btnPeek.Size = new System.Drawing.Size(87, 33);
+            this.btnPeek.TabIndex = 8;
+            this.btnPeek.Text = "Peek";
+            this.btnPeek.UseVisualStyleBackColor = true;
+            this.btnPeek.Click += new System.EventHandler(this.btnPeek_Click);
+            // 
+            // btnCount
+            // 
+            this.btnCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCount.Location = new System.Drawing.Point(274, 172);
+            this.btnCount.Name = "btnCount";
+            this.btnCount.Size = new System.Drawing.Size(87, 33);
+            this.btnCount.TabIndex = 7;
+            this.btnCount.Text = "Count";
+            this.btnCount.UseVisualStyleBackColor = true;
+            this.btnCount.Click += new System.EventHandler(this.btnCount_Click);
+            // 
+            // btnContain
+            // 
+            this.btnContain.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContain.Location = new System.Drawing.Point(367, 94);
+            this.btnContain.Name = "btnContain";
+            this.btnContain.Size = new System.Drawing.Size(87, 33);
+            this.btnContain.TabIndex = 6;
+            this.btnContain.Text = "Contains";
+            this.btnContain.UseVisualStyleBackColor = true;
+            this.btnContain.Click += new System.EventHandler(this.btnContain_Click);
+            // 
+            // btnEnqueue
+            // 
+            this.btnEnqueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnqueue.Location = new System.Drawing.Point(274, 94);
+            this.btnEnqueue.Name = "btnEnqueue";
+            this.btnEnqueue.Size = new System.Drawing.Size(87, 33);
+            this.btnEnqueue.TabIndex = 5;
+            this.btnEnqueue.Text = "Enqueue";
+            this.btnEnqueue.UseVisualStyleBackColor = true;
+            this.btnEnqueue.Click += new System.EventHandler(this.btnEnqueue_Click);
+            // 
+            // txtQueueValue
+            // 
+            this.txtQueueValue.Location = new System.Drawing.Point(367, 59);
+            this.txtQueueValue.Name = "txtQueueValue";
+            this.txtQueueValue.Size = new System.Drawing.Size(134, 29);
+            this.txtQueueValue.TabIndex = 1;
+            // 
+            // lstQueue
+            // 
+            this.lstQueue.FormattingEnabled = true;
+            this.lstQueue.ItemHeight = 24;
+            this.lstQueue.Location = new System.Drawing.Point(6, 28);
+            this.lstQueue.Name = "lstQueue";
+            this.lstQueue.Size = new System.Drawing.Size(244, 364);
+            this.lstQueue.TabIndex = 0;
+            this.lstQueue.SelectedIndexChanged += new System.EventHandler(this.lstQueue_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(252, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 24);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Insert Value";
+            // 
+            // Queue
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(881, 466);
+            this.Controls.Add(this.gbQueue);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Queue";
+            this.Text = "Queue";
+            this.gbQueue.ResumeLayout(false);
+            this.gbQueue.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.GroupBox gbQueue;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnDequeue;
+        private System.Windows.Forms.Button btnPeek;
+        private System.Windows.Forms.Button btnCount;
+        private System.Windows.Forms.Button btnContain;
+        private System.Windows.Forms.Button btnEnqueue;
+        private System.Windows.Forms.TextBox txtQueueValue;
+        private System.Windows.Forms.ListBox lstQueue;
+        private System.Windows.Forms.Label label1;
+    }
+}

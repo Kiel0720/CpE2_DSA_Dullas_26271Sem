@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnStack = new System.Windows.Forms.Button();
             this.btnLinkedlist = new System.Windows.Forms.Button();
             this.btnArray = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnQueue = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -72,6 +73,43 @@
             this.splitContainer1.SplitterDistance = 150;
             this.splitContainer1.TabIndex = 0;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Orange;
+            this.label3.Location = new System.Drawing.Point(13, 102);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(362, 29);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "DULLAS, CHARLES EZEKIEL F. (CpE2)";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Orange;
+            this.label2.Location = new System.Drawing.Point(12, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(402, 34);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "DATA STRUCTURE AND ALGORITHM";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Impact", 35.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gold;
+            this.label1.Location = new System.Drawing.Point(4, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1271, 59);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "UNIVERSITY OF PERPETUAL HELP SYSTEM DALTA CALAMBA CAMPUS";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // splitContainer2
             // 
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
@@ -91,6 +129,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnQueue);
             this.groupBox1.Controls.Add(this.btnStack);
             this.groupBox1.Controls.Add(this.btnLinkedlist);
             this.groupBox1.Controls.Add(this.btnArray);
@@ -111,6 +150,7 @@
             this.btnStack.TabIndex = 2;
             this.btnStack.Text = "Stack";
             this.btnStack.UseVisualStyleBackColor = true;
+            this.btnStack.Click += new System.EventHandler(this.btnStack_Click);
             // 
             // btnLinkedlist
             // 
@@ -121,6 +161,7 @@
             this.btnLinkedlist.TabIndex = 1;
             this.btnLinkedlist.Text = "Linkedlist";
             this.btnLinkedlist.UseVisualStyleBackColor = true;
+            this.btnLinkedlist.Click += new System.EventHandler(this.btnLinkedlist_Click_1);
             // 
             // btnArray
             // 
@@ -133,42 +174,16 @@
             this.btnArray.UseVisualStyleBackColor = true;
             this.btnArray.Click += new System.EventHandler(this.btnArray_Click);
             // 
-            // label1
+            // btnQueue
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Impact", 35.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gold;
-            this.label1.Location = new System.Drawing.Point(4, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1271, 59);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "UNIVERSITY OF PERPETUAL HELP SYSTEM DALTA CALAMBA CAMPUS";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Orange;
-            this.label2.Location = new System.Drawing.Point(12, 68);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(402, 34);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "DATA STRUCTURE AND ALGORITHM";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Orange;
-            this.label3.Location = new System.Drawing.Point(13, 102);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(362, 29);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "DULLAS, CHARLES EZEKIEL F. (CpE2)";
+            this.btnQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQueue.Location = new System.Drawing.Point(22, 225);
+            this.btnQueue.Name = "btnQueue";
+            this.btnQueue.Size = new System.Drawing.Size(150, 50);
+            this.btnQueue.TabIndex = 3;
+            this.btnQueue.Text = "Queue";
+            this.btnQueue.UseVisualStyleBackColor = true;
+            this.btnQueue.Click += new System.EventHandler(this.btnQueue_Click);
             // 
             // Form1
             // 
@@ -205,6 +220,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnQueue;
     }
 }
 
