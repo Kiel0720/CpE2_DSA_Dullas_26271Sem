@@ -65,5 +65,10 @@ namespace CpE2_DSA_Dullas_26271Sem
         {
             formShow(new Queue(), splitContainer2.Panel2);
         }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            formShow(new List(), splitContainer2.Panel2);
+        }
     }
 }

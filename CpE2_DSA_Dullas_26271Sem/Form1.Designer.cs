@@ -34,10 +34,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnQueue = new System.Windows.Forms.Button();
             this.btnStack = new System.Windows.Forms.Button();
             this.btnLinkedlist = new System.Windows.Forms.Button();
             this.btnArray = new System.Windows.Forms.Button();
-            this.btnQueue = new System.Windows.Forms.Button();
+            this.btnList = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -129,6 +130,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnList);
             this.groupBox1.Controls.Add(this.btnQueue);
             this.groupBox1.Controls.Add(this.btnStack);
             this.groupBox1.Controls.Add(this.btnLinkedlist);
@@ -140,6 +142,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "MENU";
+            // 
+            // btnQueue
+            // 
+            this.btnQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQueue.Location = new System.Drawing.Point(22, 225);
+            this.btnQueue.Name = "btnQueue";
+            this.btnQueue.Size = new System.Drawing.Size(150, 50);
+            this.btnQueue.TabIndex = 3;
+            this.btnQueue.Text = "Queue";
+            this.btnQueue.UseVisualStyleBackColor = true;
+            this.btnQueue.Click += new System.EventHandler(this.btnQueue_Click);
             // 
             // btnStack
             // 
@@ -174,16 +187,16 @@
             this.btnArray.UseVisualStyleBackColor = true;
             this.btnArray.Click += new System.EventHandler(this.btnArray_Click);
             // 
-            // btnQueue
+            // btnList
             // 
-            this.btnQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQueue.Location = new System.Drawing.Point(22, 225);
-            this.btnQueue.Name = "btnQueue";
-            this.btnQueue.Size = new System.Drawing.Size(150, 50);
-            this.btnQueue.TabIndex = 3;
-            this.btnQueue.Text = "Queue";
-            this.btnQueue.UseVisualStyleBackColor = true;
-            this.btnQueue.Click += new System.EventHandler(this.btnQueue_Click);
+            this.btnList.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnList.Location = new System.Drawing.Point(22, 281);
+            this.btnList.Name = "btnList";
+            this.btnList.Size = new System.Drawing.Size(150, 50);
+            this.btnList.TabIndex = 4;
+            this.btnList.Text = "List";
+            this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // Form1
             // 
@@ -221,6 +234,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnQueue;
+        private System.Windows.Forms.Button btnList;
     }
 }
 
