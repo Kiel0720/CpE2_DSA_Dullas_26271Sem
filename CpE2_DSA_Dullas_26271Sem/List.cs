@@ -33,7 +33,7 @@ namespace CpE2_DSA_Dullas_26271Sem
 
             if (txtRemoveAtIndexOf.Text == "")
             {
-                myList.Add(value);   // Add normally
+                myList.Add(value);
             }
             else
             {
@@ -51,7 +51,7 @@ namespace CpE2_DSA_Dullas_26271Sem
                     return;
                 }
 
-                myList.Insert(index, value);  // Add at index
+                myList.Insert(index, value);
             }
             DisplayAll();
             txtList.Clear();
