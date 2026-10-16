@@ -70,5 +70,10 @@ namespace CpE2_DSA_Dullas_26271Sem
         {
             formShow(new List(), splitContainer2.Panel2);
         }
+
+            private void btnMerge_Click(object sender, EventArgs e)
+            {
+                formShow(new Merge(), splitContainer2.Panel2);
+            }
     }
 }
