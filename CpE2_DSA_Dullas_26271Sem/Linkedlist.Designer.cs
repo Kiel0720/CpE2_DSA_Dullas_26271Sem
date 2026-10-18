@@ -70,7 +70,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(876, 471);
+            this.groupBox1.Size = new System.Drawing.Size(1028, 471);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Linkedlist";
@@ -79,7 +79,7 @@
             // 
             this.gbFind.Controls.Add(this.txtFind);
             this.gbFind.Controls.Add(this.btnFind);
-            this.gbFind.Location = new System.Drawing.Point(539, 244);
+            this.gbFind.Location = new System.Drawing.Point(630, 240);
             this.gbFind.Name = "gbFind";
             this.gbFind.Size = new System.Drawing.Size(284, 168);
             this.gbFind.TabIndex = 4;
@@ -105,7 +105,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(477, 32);
+            this.btnClear.Location = new System.Drawing.Point(568, 28);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(110, 32);
             this.btnClear.TabIndex = 6;
@@ -115,7 +115,7 @@
             // 
             // btnCount
             // 
-            this.btnCount.Location = new System.Drawing.Point(361, 32);
+            this.btnCount.Location = new System.Drawing.Point(452, 28);
             this.btnCount.Name = "btnCount";
             this.btnCount.Size = new System.Drawing.Size(110, 32);
             this.btnCount.TabIndex = 5;
@@ -129,7 +129,7 @@
             this.gbAddbeforeAfter.Controls.Add(this.txtCurrent);
             this.gbAddbeforeAfter.Controls.Add(this.btnInsertBeforeAfter);
             this.gbAddbeforeAfter.Controls.Add(this.cmbAddBeforeAfter);
-            this.gbAddbeforeAfter.Location = new System.Drawing.Point(249, 244);
+            this.gbAddbeforeAfter.Location = new System.Drawing.Point(340, 240);
             this.gbAddbeforeAfter.Name = "gbAddbeforeAfter";
             this.gbAddbeforeAfter.Size = new System.Drawing.Size(284, 196);
             this.gbAddbeforeAfter.TabIndex = 4;
@@ -175,7 +175,7 @@
             // 
             this.gbRemove.Controls.Add(this.btnRemove);
             this.gbRemove.Controls.Add(this.cmbRemove);
-            this.gbRemove.Location = new System.Drawing.Point(539, 70);
+            this.gbRemove.Location = new System.Drawing.Point(630, 66);
             this.gbRemove.Name = "gbRemove";
             this.gbRemove.Size = new System.Drawing.Size(284, 168);
             this.gbRemove.TabIndex = 3;
@@ -205,7 +205,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(593, 32);
+            this.btnReset.Location = new System.Drawing.Point(684, 28);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(166, 32);
             this.btnReset.TabIndex = 4;
@@ -215,7 +215,7 @@
             // 
             // btnDisplayAll
             // 
-            this.btnDisplayAll.Location = new System.Drawing.Point(249, 32);
+            this.btnDisplayAll.Location = new System.Drawing.Point(340, 28);
             this.btnDisplayAll.Name = "btnDisplayAll";
             this.btnDisplayAll.Size = new System.Drawing.Size(110, 32);
             this.btnDisplayAll.TabIndex = 3;
@@ -228,7 +228,7 @@
             this.gbAddnew.Controls.Add(this.btnInsert);
             this.gbAddnew.Controls.Add(this.txtValue);
             this.gbAddnew.Controls.Add(this.cmbAddNew);
-            this.gbAddnew.Location = new System.Drawing.Point(249, 70);
+            this.gbAddnew.Location = new System.Drawing.Point(340, 66);
             this.gbAddnew.Name = "gbAddnew";
             this.gbAddnew.Size = new System.Drawing.Size(284, 168);
             this.gbAddnew.TabIndex = 1;
@@ -267,7 +267,7 @@
             // 
             this.lstLinkedlist.FormattingEnabled = true;
             this.lstLinkedlist.ItemHeight = 24;
-            this.lstLinkedlist.Location = new System.Drawing.Point(6, 28);
+            this.lstLinkedlist.Location = new System.Drawing.Point(97, 28);
             this.lstLinkedlist.Name = "lstLinkedlist";
             this.lstLinkedlist.Size = new System.Drawing.Size(237, 412);
             this.lstLinkedlist.TabIndex = 0;
@@ -276,7 +276,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1194, 681);
+            this.BackColor = System.Drawing.Color.Silver;
+            this.ClientSize = new System.Drawing.Size(1052, 494);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Linkedlist";

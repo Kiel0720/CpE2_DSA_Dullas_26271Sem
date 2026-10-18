@@ -36,6 +36,7 @@ namespace CpE2_DSA_Dullas_26271Sem
             formToShow.FormBorderStyle = FormBorderStyle.None;
             formToShow.Parent = formtoShowParent;
             formToShow.Visible = true;
+            formToShow.Dock = DockStyle.Fill;
 
             formtoShowParent.Controls.Clear();
             formtoShowParent.Controls.Add(formToShow);
@@ -75,5 +76,20 @@ namespace CpE2_DSA_Dullas_26271Sem
             {
                 formShow(new Merge(), splitContainer2.Panel2);
             }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void splitContainer2_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void splitContainer2_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
