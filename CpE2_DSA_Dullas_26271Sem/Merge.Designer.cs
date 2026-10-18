@@ -37,33 +37,37 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.pnlAnimation = new System.Windows.Forms.Panel();
             this.lblStatus = new System.Windows.Forms.Label();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Location = new System.Drawing.Point(80, 25);
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(235, 32);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(147, 13);
+            this.lblTitle.Size = new System.Drawing.Size(303, 31);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Merge Sort Visualizer heading";
+            this.lblTitle.Text = "MERGE SORT ALGORITHM";
             // 
             // txtArray
             // 
             this.txtArray.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtArray.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArray.Location = new System.Drawing.Point(83, 41);
+            this.txtArray.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtArray.Location = new System.Drawing.Point(64, 52);
             this.txtArray.Name = "txtArray";
-            this.txtArray.Size = new System.Drawing.Size(650, 38);
+            this.txtArray.Size = new System.Drawing.Size(667, 47);
             this.txtArray.TabIndex = 1;
+            this.txtArray.TextChanged += new System.EventHandler(this.txtArray_TextChanged);
             // 
             // btnGenerate
             // 
             this.btnGenerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerate.ForeColor = System.Drawing.Color.Gold;
-            this.btnGenerate.Location = new System.Drawing.Point(83, 85);
+            this.btnGenerate.Location = new System.Drawing.Point(64, 105);
             this.btnGenerate.Name = "btnGenerate";
-            this.btnGenerate.Size = new System.Drawing.Size(125, 50);
+            this.btnGenerate.Size = new System.Drawing.Size(114, 50);
             this.btnGenerate.TabIndex = 2;
             this.btnGenerate.Text = "Generate";
             this.btnGenerate.UseVisualStyleBackColor = true;
@@ -73,9 +77,9 @@
             // 
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.ForeColor = System.Drawing.Color.Gold;
-            this.btnStart.Location = new System.Drawing.Point(214, 85);
+            this.btnStart.Location = new System.Drawing.Point(184, 105);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(125, 50);
+            this.btnStart.Size = new System.Drawing.Size(114, 50);
             this.btnStart.TabIndex = 3;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -85,9 +89,9 @@
             // 
             this.btnPause.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPause.ForeColor = System.Drawing.Color.Gold;
-            this.btnPause.Location = new System.Drawing.Point(345, 85);
+            this.btnPause.Location = new System.Drawing.Point(304, 105);
             this.btnPause.Name = "btnPause";
-            this.btnPause.Size = new System.Drawing.Size(125, 50);
+            this.btnPause.Size = new System.Drawing.Size(114, 50);
             this.btnPause.TabIndex = 4;
             this.btnPause.Text = "Pause";
             this.btnPause.UseVisualStyleBackColor = true;
@@ -98,9 +102,9 @@
             this.btnNext.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext.ForeColor = System.Drawing.Color.Gold;
-            this.btnNext.Location = new System.Drawing.Point(476, 85);
+            this.btnNext.Location = new System.Drawing.Point(424, 105);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(125, 50);
+            this.btnNext.Size = new System.Drawing.Size(114, 50);
             this.btnNext.TabIndex = 5;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = false;
@@ -108,12 +112,12 @@
             // 
             // btnReset
             // 
-            this.btnReset.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnReset.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.Gold;
-            this.btnReset.Location = new System.Drawing.Point(607, 85);
+            this.btnReset.Location = new System.Drawing.Point(544, 105);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(125, 50);
+            this.btnReset.Size = new System.Drawing.Size(114, 50);
             this.btnReset.TabIndex = 6;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -123,9 +127,9 @@
             // 
             this.pnlAnimation.BackColor = System.Drawing.SystemColors.GrayText;
             this.pnlAnimation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlAnimation.Location = new System.Drawing.Point(83, 141);
+            this.pnlAnimation.Location = new System.Drawing.Point(64, 161);
             this.pnlAnimation.Name = "pnlAnimation";
-            this.pnlAnimation.Size = new System.Drawing.Size(650, 211);
+            this.pnlAnimation.Size = new System.Drawing.Size(667, 211);
             this.pnlAnimation.TabIndex = 7;
             this.pnlAnimation.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlAnimation_Paint);
             // 
@@ -133,23 +137,39 @@
             // 
             this.lblStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(83, 355);
+            this.lblStatus.Location = new System.Drawing.Point(64, 375);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(650, 73);
+            this.lblStatus.Size = new System.Drawing.Size(667, 61);
             this.lblStatus.TabIndex = 8;
             this.lblStatus.Text = "Ready To Sort";
+            this.lblStatus.Click += new System.EventHandler(this.lblStatus_Click);
+            // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.Gold;
+            this.btnClear.Location = new System.Drawing.Point(664, 105);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(114, 50);
+            this.btnClear.TabIndex = 9;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // Merge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(881, 466);
-            this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.pnlAnimation);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPause);
             this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.lblStatus);
+            this.Controls.Add(this.pnlAnimation);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.txtArray);
             this.Controls.Add(this.lblTitle);
@@ -172,5 +192,6 @@
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Panel pnlAnimation;
         private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Button btnClear;
     }
 }
