@@ -42,7 +42,7 @@
             // 
             this.txtArray.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(63)))), ((int)(((byte)(71)))));
             this.txtArray.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(243)))), ((int)(((byte)(245)))));
-            this.txtArray.Location = new System.Drawing.Point(201, 75);
+            this.txtArray.Location = new System.Drawing.Point(184, 97);
             this.txtArray.Name = "txtArray";
             this.txtArray.Size = new System.Drawing.Size(650, 20);
             this.txtArray.TabIndex = 15;
@@ -53,14 +53,14 @@
             this.lblStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
-            this.lblStatus.Location = new System.Drawing.Point(201, 369);
+            this.lblStatus.Location = new System.Drawing.Point(184, 391);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(650, 50);
             this.lblStatus.TabIndex = 14;
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(718, 101);
+            this.btnReset.Location = new System.Drawing.Point(701, 123);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(120, 40);
             this.btnReset.TabIndex = 13;
@@ -69,7 +69,7 @@
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(592, 101);
+            this.btnNext.Location = new System.Drawing.Point(575, 123);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(120, 40);
             this.btnNext.TabIndex = 12;
@@ -78,7 +78,7 @@
             // 
             // btnPause
             // 
-            this.btnPause.Location = new System.Drawing.Point(466, 101);
+            this.btnPause.Location = new System.Drawing.Point(449, 123);
             this.btnPause.Name = "btnPause";
             this.btnPause.Size = new System.Drawing.Size(120, 40);
             this.btnPause.TabIndex = 11;
@@ -87,7 +87,7 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(340, 101);
+            this.btnStart.Location = new System.Drawing.Point(323, 123);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(120, 40);
             this.btnStart.TabIndex = 10;
@@ -96,7 +96,7 @@
             // 
             // btnGenerate
             // 
-            this.btnGenerate.Location = new System.Drawing.Point(214, 101);
+            this.btnGenerate.Location = new System.Drawing.Point(197, 123);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(120, 40);
             this.btnGenerate.TabIndex = 9;
@@ -107,7 +107,7 @@
             // 
             this.pnlAnimation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(33)))), ((int)(((byte)(39)))));
             this.pnlAnimation.ForeColor = System.Drawing.Color.White;
-            this.pnlAnimation.Location = new System.Drawing.Point(201, 156);
+            this.pnlAnimation.Location = new System.Drawing.Point(184, 178);
             this.pnlAnimation.Name = "pnlAnimation";
             this.pnlAnimation.Size = new System.Drawing.Size(650, 210);
             this.pnlAnimation.TabIndex = 8;

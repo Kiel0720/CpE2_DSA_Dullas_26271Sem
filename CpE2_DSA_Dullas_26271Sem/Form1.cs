@@ -119,7 +119,7 @@ namespace CpE2_DSA_Dullas_26271Sem
 
         private void btnHeap_Click(object sender, EventArgs e)
         {
-
+            formShow(new Heap(), splitContainer2.Panel2);
         }
     }
 }
