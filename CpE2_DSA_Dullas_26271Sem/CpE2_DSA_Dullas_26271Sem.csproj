@@ -58,6 +58,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Heap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Heap.Designer.cs">
+      <DependentUpon>Heap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Linkedlist.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,12 @@
     <Compile Include="Queue.Designer.cs">
       <DependentUpon>Queue.cs</DependentUpon>
     </Compile>
+    <Compile Include="Shell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shell.Designer.cs">
+      <DependentUpon>Shell.cs</DependentUpon>
+    </Compile>
     <Compile Include="Stack.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Heap.resx">
+      <DependentUpon>Heap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Linkedlist.resx">
       <DependentUpon>Linkedlist.cs</DependentUpon>
@@ -116,6 +131,9 @@
     </Compile>
     <EmbeddedResource Include="Queue.resx">
       <DependentUpon>Queue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shell.resx">
+      <DependentUpon>Shell.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Stack.resx">
       <DependentUpon>Stack.cs</DependentUpon>

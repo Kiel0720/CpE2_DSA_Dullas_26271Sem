@@ -47,6 +47,7 @@ namespace CpE2_DSA_Dullas_26271Sem
         readonly Font hintFont = new Font("Segoe UI", 10.5F);
 
         Button[] buttons;
+        Label title;
         string[] values = new string[0];
         int[] ids;
         float[] sx, sy, tx, ty;
@@ -73,7 +74,16 @@ namespace CpE2_DSA_Dullas_26271Sem
             Shown += (s, e) => SendMessage(txtArray.Handle, 0x1501, (IntPtr)1, cue);
             buttons = new[] { btnGenerate, btnStart, btnPause, btnNext, btnReset, btnClear };
             string[] hex = { "#800000", "#2EA043", "#E6911E", "#2D7DD2", "#6E6E78", "#AA283C" };
+            pnlAnimation.Parent.BackColor = ColorTranslator.FromHtml("#2B2F36");
+            pnlAnimation.BackColor = ColorTranslator.FromHtml("#1E2127");
+            txtArray.BackColor = ColorTranslator.FromHtml("#3A3F47");
+            txtArray.ForeColor = ColorTranslator.FromHtml("#F1F3F5");
+            lblStatus.BackColor = ColorTranslator.FromHtml("#3A3F47");
+            lblStatus.ForeColor = ColorTranslator.FromHtml("#E8EAED");
             for (int i = 0; i < buttons.Length; i++) StyleButton(buttons[i], ColorTranslator.FromHtml(hex[i]));
+            title = new Label { Text = "MERGE ALGORITHM" };
+            pnlAnimation.Parent.Controls.Add(title);
+            title.Paint += PaintTitle;
             LayoutControls();
             pnlAnimation.LocationChanged += (s, e) => LayoutControls();
             pnlAnimation.SizeChanged += (s, e) => { LayoutControls(); pnlAnimation.Invalidate(); };
@@ -85,11 +95,33 @@ namespace CpE2_DSA_Dullas_26271Sem
         {
             Rectangle p = pnlAnimation.Bounds;
             txtArray.SetBounds(p.Left, p.Top - 60 - txtArray.Height, p.Width, txtArray.Height);
+            title.SetBounds(p.Left, txtArray.Top - 54, p.Width, 44);
             int w = (p.Width - 10 * (buttons.Length - 1)) / buttons.Length;
             for (int i = 0; i < buttons.Length; i++)
                 buttons[i].SetBounds(p.Left + i * (w + 10), p.Top - 52, w, 40);
         }
-
+        void PaintTitle(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+            g.Clear(title.Parent.BackColor);
+            var r = new RectangleF(0, 0, title.Width - 1, title.Height - 1);
+            string text = string.Join("\u2009", title.Text.ToCharArray());
+            Color gold = Color.FromArgb(255, 204, 0);
+            using (var path = RoundRect(r, 12))
+            using (var back = new LinearGradientBrush(r, Color.FromArgb(150, 0, 0), Color.FromArgb(70, 0, 0), 0f))
+            using (var accent = new SolidBrush(gold))
+            using (var shade = new SolidBrush(Color.FromArgb(140, 0, 0, 0)))
+            using (var f = new Font("Impact", 20F))
+            using (var fmt = Centered())
+            {
+                g.FillPath(back, path);
+                g.FillRectangle(accent, 14, 10, 5, title.Height - 21);
+                g.FillRectangle(accent, title.Width - 19, 10, 5, title.Height - 21);
+                g.DrawString(text, f, shade, new RectangleF(2, 2, r.Width, r.Height), fmt);
+                g.DrawString(text, f, accent, r, fmt);
+            }
+        }
         void StyleButton(Button b, Color accent)
         {
             Color bg = b.Parent.BackColor;

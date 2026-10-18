@@ -106,5 +106,20 @@ namespace CpE2_DSA_Dullas_26271Sem
         {
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnShell_Click(object sender, EventArgs e)
+        {
+            formShow(new Shell(), splitContainer2.Panel2);
+        }
+
+        private void btnHeap_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
