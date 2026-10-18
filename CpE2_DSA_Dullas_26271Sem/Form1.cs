@@ -16,7 +16,22 @@ namespace CpE2_DSA_Dullas_26271Sem
         public Form1()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.Resize += Form1_resize;
+
+            CenterLayout();
         }
+        private void Form1_resize(object sender, EventArgs e)
+        {
+            CenterLayout();
+        }
+        private void CenterLayout()
+        {
+            splitContainer1.Location = new Point(
+                (this.ClientSize.Width - splitContainer1.Width) / 2,
+                (this.ClientSize.Height - splitContainer1.Height) / 2);
+        }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -72,10 +87,10 @@ namespace CpE2_DSA_Dullas_26271Sem
             formShow(new List(), splitContainer2.Panel2);
         }
 
-            private void btnMerge_Click(object sender, EventArgs e)
-            {
-                formShow(new Merge(), splitContainer2.Panel2);
-            }
+        private void btnMerge_Click(object sender, EventArgs e)
+        {
+            formShow(new Merge(), splitContainer2.Panel2);
+        }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
         {

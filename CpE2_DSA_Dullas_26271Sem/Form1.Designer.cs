@@ -52,6 +52,7 @@
             // 
             // splitContainer1
             // 
+            this.splitContainer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
