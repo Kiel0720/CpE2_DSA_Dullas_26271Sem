@@ -53,7 +53,7 @@
             // btnGenerate
             // 
             this.btnGenerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerate.ForeColor = System.Drawing.Color.Gold;
+            this.btnGenerate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGenerate.Location = new System.Drawing.Point(178, 119);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(114, 50);
@@ -65,7 +65,7 @@
             // btnStart
             // 
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.ForeColor = System.Drawing.Color.Gold;
+            this.btnStart.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnStart.Location = new System.Drawing.Point(298, 119);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(114, 50);
@@ -77,7 +77,7 @@
             // btnPause
             // 
             this.btnPause.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPause.ForeColor = System.Drawing.Color.Gold;
+            this.btnPause.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPause.Location = new System.Drawing.Point(418, 119);
             this.btnPause.Name = "btnPause";
             this.btnPause.Size = new System.Drawing.Size(114, 50);
@@ -90,7 +90,7 @@
             // 
             this.btnNext.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.ForeColor = System.Drawing.Color.Gold;
+            this.btnNext.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnNext.Location = new System.Drawing.Point(538, 119);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(114, 50);
@@ -103,7 +103,7 @@
             // 
             this.btnReset.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.ForeColor = System.Drawing.Color.Gold;
+            this.btnReset.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnReset.Location = new System.Drawing.Point(658, 119);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(114, 50);
@@ -139,7 +139,7 @@
             // 
             this.btnClear.BackColor = System.Drawing.SystemColors.HighlightText;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.Color.Gold;
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnClear.Location = new System.Drawing.Point(778, 119);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(114, 50);

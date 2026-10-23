@@ -53,6 +53,7 @@
             this.gbQueue.Controls.Add(this.txtQueueValue);
             this.gbQueue.Controls.Add(this.lstQueue);
             this.gbQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbQueue.ForeColor = System.Drawing.Color.Gold;
             this.gbQueue.Location = new System.Drawing.Point(12, 12);
             this.gbQueue.Name = "gbQueue";
             this.gbQueue.Size = new System.Drawing.Size(1028, 470);
@@ -72,6 +73,7 @@
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnClear.Location = new System.Drawing.Point(462, 188);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(87, 33);
@@ -83,6 +85,7 @@
             // btnDequeue
             // 
             this.btnDequeue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDequeue.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDequeue.Location = new System.Drawing.Point(369, 149);
             this.btnDequeue.Name = "btnDequeue";
             this.btnDequeue.Size = new System.Drawing.Size(87, 33);
@@ -94,6 +97,7 @@
             // btnPeek
             // 
             this.btnPeek.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPeek.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPeek.Location = new System.Drawing.Point(462, 149);
             this.btnPeek.Name = "btnPeek";
             this.btnPeek.Size = new System.Drawing.Size(87, 33);
@@ -105,6 +109,7 @@
             // btnCount
             // 
             this.btnCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCount.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCount.Location = new System.Drawing.Point(369, 188);
             this.btnCount.Name = "btnCount";
             this.btnCount.Size = new System.Drawing.Size(87, 33);
@@ -116,6 +121,7 @@
             // btnContain
             // 
             this.btnContain.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContain.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnContain.Location = new System.Drawing.Point(462, 110);
             this.btnContain.Name = "btnContain";
             this.btnContain.Size = new System.Drawing.Size(87, 33);
@@ -127,6 +133,7 @@
             // btnEnqueue
             // 
             this.btnEnqueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnqueue.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnEnqueue.Location = new System.Drawing.Point(369, 110);
             this.btnEnqueue.Name = "btnEnqueue";
             this.btnEnqueue.Size = new System.Drawing.Size(87, 33);
@@ -156,7 +163,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(1052, 494);
             this.Controls.Add(this.gbQueue);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

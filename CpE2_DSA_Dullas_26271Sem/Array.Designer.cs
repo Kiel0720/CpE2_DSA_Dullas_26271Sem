@@ -53,6 +53,7 @@
             this.groupbox1.Controls.Add(this.txtIndex);
             this.groupbox1.Controls.Add(this.lstArray);
             this.groupbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupbox1.ForeColor = System.Drawing.Color.Gold;
             this.groupbox1.Location = new System.Drawing.Point(12, 12);
             this.groupbox1.Name = "groupbox1";
             this.groupbox1.Size = new System.Drawing.Size(1022, 470);
@@ -64,6 +65,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Gold;
             this.label2.Location = new System.Drawing.Point(353, 141);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 24);
@@ -74,6 +76,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gold;
             this.label1.Location = new System.Drawing.Point(353, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 24);
@@ -83,6 +86,7 @@
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.btnClear.Location = new System.Drawing.Point(504, 210);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(122, 33);
@@ -101,6 +105,7 @@
             // btnInsert
             // 
             this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsert.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.btnInsert.Location = new System.Drawing.Point(504, 171);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(122, 33);
@@ -112,6 +117,7 @@
             // btnDisplayAll
             // 
             this.btnDisplayAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDisplayAll.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.btnDisplayAll.Location = new System.Drawing.Point(504, 97);
             this.btnDisplayAll.Name = "btnDisplayAll";
             this.btnDisplayAll.Size = new System.Drawing.Size(122, 33);
@@ -123,6 +129,7 @@
             // btnArray
             // 
             this.btnArray.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArray.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.btnArray.Location = new System.Drawing.Point(433, 58);
             this.btnArray.Name = "btnArray";
             this.btnArray.Size = new System.Drawing.Size(193, 33);
@@ -150,7 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(1052, 494);
             this.Controls.Add(this.groupbox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

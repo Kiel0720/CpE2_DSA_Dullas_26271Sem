@@ -59,6 +59,7 @@
             this.gpList.Controls.Add(this.gpbInsertAddRemove);
             this.gpList.Controls.Add(this.gpbRemoveAtIndexOf);
             this.gpList.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpList.ForeColor = System.Drawing.Color.Gold;
             this.gpList.Location = new System.Drawing.Point(12, 12);
             this.gpList.Name = "gpList";
             this.gpList.Size = new System.Drawing.Size(1028, 470);
@@ -68,6 +69,7 @@
             // 
             // btnClear
             // 
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnClear.Location = new System.Drawing.Point(343, 28);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(100, 32);
@@ -78,6 +80,7 @@
             // 
             // btnSort
             // 
+            this.btnSort.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSort.Location = new System.Drawing.Point(555, 28);
             this.btnSort.Name = "btnSort";
             this.btnSort.Size = new System.Drawing.Size(100, 32);
@@ -88,6 +91,7 @@
             // 
             // btnCount
             // 
+            this.btnCount.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCount.Location = new System.Drawing.Point(449, 28);
             this.btnCount.Name = "btnCount";
             this.btnCount.Size = new System.Drawing.Size(100, 32);
@@ -112,7 +116,8 @@
             this.gpbInsertAddRemove.Controls.Add(this.btnAdd);
             this.gpbInsertAddRemove.Controls.Add(this.btnInsert);
             this.gpbInsertAddRemove.Controls.Add(this.btnRemove);
-            this.gpbInsertAddRemove.Location = new System.Drawing.Point(343, 86);
+            this.gpbInsertAddRemove.ForeColor = System.Drawing.Color.Gold;
+            this.gpbInsertAddRemove.Location = new System.Drawing.Point(343, 66);
             this.gpbInsertAddRemove.Name = "gpbInsertAddRemove";
             this.gpbInsertAddRemove.Size = new System.Drawing.Size(251, 166);
             this.gpbInsertAddRemove.TabIndex = 13;
@@ -139,6 +144,7 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnAdd.Location = new System.Drawing.Point(145, 73);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(100, 32);
@@ -149,6 +155,7 @@
             // 
             // btnInsert
             // 
+            this.btnInsert.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnInsert.Location = new System.Drawing.Point(39, 73);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(100, 32);
@@ -159,6 +166,7 @@
             // 
             // btnRemove
             // 
+            this.btnRemove.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRemove.Location = new System.Drawing.Point(145, 111);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(100, 32);
@@ -174,7 +182,8 @@
             this.gpbRemoveAtIndexOf.Controls.Add(this.btnIndexOf);
             this.gpbRemoveAtIndexOf.Controls.Add(this.btnContains);
             this.gpbRemoveAtIndexOf.Controls.Add(this.btnRemoveAt);
-            this.gpbRemoveAtIndexOf.Location = new System.Drawing.Point(614, 91);
+            this.gpbRemoveAtIndexOf.ForeColor = System.Drawing.Color.Gold;
+            this.gpbRemoveAtIndexOf.Location = new System.Drawing.Point(600, 71);
             this.gpbRemoveAtIndexOf.Name = "gpbRemoveAtIndexOf";
             this.gpbRemoveAtIndexOf.Size = new System.Drawing.Size(269, 161);
             this.gpbRemoveAtIndexOf.TabIndex = 14;
@@ -200,6 +209,7 @@
             // 
             // btnIndexOf
             // 
+            this.btnIndexOf.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnIndexOf.Location = new System.Drawing.Point(148, 106);
             this.btnIndexOf.Name = "btnIndexOf";
             this.btnIndexOf.Size = new System.Drawing.Size(115, 32);
@@ -210,6 +220,7 @@
             // 
             // btnContains
             // 
+            this.btnContains.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnContains.Location = new System.Drawing.Point(42, 68);
             this.btnContains.Name = "btnContains";
             this.btnContains.Size = new System.Drawing.Size(100, 32);
@@ -220,6 +231,7 @@
             // 
             // btnRemoveAt
             // 
+            this.btnRemoveAt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRemoveAt.Location = new System.Drawing.Point(148, 68);
             this.btnRemoveAt.Name = "btnRemoveAt";
             this.btnRemoveAt.Size = new System.Drawing.Size(115, 32);
@@ -232,7 +244,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(1052, 494);
             this.Controls.Add(this.gpList);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

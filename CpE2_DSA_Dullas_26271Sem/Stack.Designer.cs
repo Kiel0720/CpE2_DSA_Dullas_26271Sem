@@ -53,6 +53,7 @@
             this.gbStack.Controls.Add(this.txtStackValue);
             this.gbStack.Controls.Add(this.lstStack);
             this.gbStack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbStack.ForeColor = System.Drawing.Color.Gold;
             this.gbStack.Location = new System.Drawing.Point(12, 12);
             this.gbStack.Name = "gbStack";
             this.gbStack.Size = new System.Drawing.Size(1028, 470);
@@ -72,6 +73,7 @@
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnClear.Location = new System.Drawing.Point(458, 172);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(87, 33);
@@ -83,6 +85,7 @@
             // btnPop
             // 
             this.btnPop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPop.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPop.Location = new System.Drawing.Point(365, 133);
             this.btnPop.Name = "btnPop";
             this.btnPop.Size = new System.Drawing.Size(87, 33);
@@ -94,6 +97,7 @@
             // btnPeek
             // 
             this.btnPeek.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPeek.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPeek.Location = new System.Drawing.Point(458, 133);
             this.btnPeek.Name = "btnPeek";
             this.btnPeek.Size = new System.Drawing.Size(87, 33);
@@ -105,6 +109,7 @@
             // btnCount
             // 
             this.btnCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCount.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCount.Location = new System.Drawing.Point(365, 172);
             this.btnCount.Name = "btnCount";
             this.btnCount.Size = new System.Drawing.Size(87, 33);
@@ -116,6 +121,7 @@
             // btnContain
             // 
             this.btnContain.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContain.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnContain.Location = new System.Drawing.Point(458, 94);
             this.btnContain.Name = "btnContain";
             this.btnContain.Size = new System.Drawing.Size(87, 33);
@@ -127,6 +133,7 @@
             // btnPush
             // 
             this.btnPush.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPush.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnPush.Location = new System.Drawing.Point(365, 94);
             this.btnPush.Name = "btnPush";
             this.btnPush.Size = new System.Drawing.Size(87, 33);
@@ -155,7 +162,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(47)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(1052, 494);
             this.Controls.Add(this.gbStack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
