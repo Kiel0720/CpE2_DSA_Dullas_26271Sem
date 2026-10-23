@@ -163,9 +163,7 @@ namespace CpE2_DSA_Dullas_26271Sem
 
         private void btnCount_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(
-                "Number of items: " + myList.Count
-            );
+            MessageBox.Show("Number of items: " + myList.Count);
         }
 
         private void btnContains_Click(object sender, EventArgs e)

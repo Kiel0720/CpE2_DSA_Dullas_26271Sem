@@ -66,8 +66,9 @@ namespace CpE2_DSA_Dullas_26271Sem
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString());
-                txtValue.Focus();
             }
+            txtValue.Clear();
+            txtValue.Focus();
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
@@ -96,27 +97,52 @@ namespace CpE2_DSA_Dullas_26271Sem
 
         private void btnInsertBeforeAfter_Click(object sender, EventArgs e)
         {
-            current = Llist.Find(Convert.ToInt32(txtCurrent.Text));
             try
             {
+                if (!int.TryParse(txtCurrent.Text, out int currentValue))
+                {
+                    MessageBox.Show("Please enter a valid number for the current node.");
+                    txtCurrent.Focus();
+                    return;
+                }
+
+                if (!int.TryParse(txtValue2.Text, out int newValue))
+                {
+                    MessageBox.Show("Please enter a valid number for the new value.");
+                    txtValue2.Focus();
+                    return;
+                }
+
+                current = Llist.Find(currentValue);
+
+                if (current == null)
+                {
+                    MessageBox.Show("The current value was not found in the list.");
+                    return;
+                }
+
                 switch (cmbAddBeforeAfter.Text)
                 {
                     case "AddBefore":
-                        Llist.AddBefore(current, Convert.ToInt32(txtValue2.Text));
+                        Llist.AddBefore(current, newValue);
                         break;
                     case "AddAfter":
-                        Llist.AddAfter(current, Convert.ToInt32(txtValue2.Text));
+                        Llist.AddAfter(current, newValue);
                         break;
                     default:
                         MessageBox.Show("Please select an option to insert.");
-                        break;
+                        return;
                 }
+
                 DisplayAll();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message.ToString());
+                MessageBox.Show(ex.Message);
             }
+
+            txtValue2.Clear();
+            txtValue2.Focus();
         }
 
         private void btnCount_Click(object sender, EventArgs e)
@@ -127,9 +153,11 @@ namespace CpE2_DSA_Dullas_26271Sem
         private void btnClear_Click(object sender, EventArgs e)
         {
             lstLinkedlist.Items.Clear();
+            Llist.Clear();
             txtValue.Clear();
-            txtCurrent.Clear();
             txtValue2.Clear();
+            txtFind.Clear();
+            txtCurrent.Clear();
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -161,6 +189,8 @@ namespace CpE2_DSA_Dullas_26271Sem
             {
                 MessageBox.Show(ex.Message.ToString());
             }
+            txtFind.Clear();
+            txtFind.Focus();
         }
     }
 }
