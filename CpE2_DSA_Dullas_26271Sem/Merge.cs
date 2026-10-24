@@ -7,6 +7,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using System.Media;
 
 namespace CpE2_DSA_Dullas_26271Sem
 {
@@ -89,6 +90,32 @@ namespace CpE2_DSA_Dullas_26271Sem
             pnlAnimation.SizeChanged += (s, e) => { LayoutControls(); pnlAnimation.Invalidate(); };
             timer.Tick += Timer_Tick;
             UpdateButtons();
+        }
+
+        void PlayStepSound(Step step)
+        {
+            switch (step.Action)
+            {
+                case "Start":
+                    SystemSounds.Beep.Play();
+                    break;
+
+                case "Divide":
+                    SystemSounds.Question.Play();
+                    break;
+
+                case "Compare":
+                    SystemSounds.Asterisk.Play();
+                    break;
+
+                case "Merge":
+                    SystemSounds.Beep.Play();
+                    break;
+
+                case "Complete":
+                    SystemSounds.Exclamation.Play();
+                    break;
+            }
         }
 
         void LayoutControls()
@@ -283,8 +310,10 @@ namespace CpE2_DSA_Dullas_26271Sem
         void GoTo(int index)
         {
             shown = index;
-            lblStatus.Text = steps[shown].Text;
-            StartSliding(steps[shown]);
+            Step step = steps[shown];
+            lblStatus.Text = step.Text;
+            PlayStepSound(step);
+            StartSliding(step);
         }
 
         bool Next()
