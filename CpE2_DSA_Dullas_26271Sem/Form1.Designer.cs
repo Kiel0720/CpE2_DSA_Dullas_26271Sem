@@ -42,6 +42,8 @@
             this.btnQueue = new System.Windows.Forms.Button();
             this.btnStack = new System.Windows.Forms.Button();
             this.btnArray = new System.Windows.Forms.Button();
+            this.btnInfo = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -50,6 +52,7 @@
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -137,14 +140,12 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnHeap);
-            this.groupBox1.Controls.Add(this.btnShell);
             this.groupBox1.Controls.Add(this.btnLinkedlist);
-            this.groupBox1.Controls.Add(this.btnMerge);
             this.groupBox1.Controls.Add(this.btnList);
             this.groupBox1.Controls.Add(this.btnQueue);
             this.groupBox1.Controls.Add(this.btnStack);
             this.groupBox1.Controls.Add(this.btnArray);
+            this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 3);
             this.groupBox1.Name = "groupBox1";
@@ -157,98 +158,123 @@
             // btnHeap
             // 
             this.btnHeap.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHeap.Location = new System.Drawing.Point(27, 427);
+            this.btnHeap.Location = new System.Drawing.Point(32, 168);
             this.btnHeap.Margin = new System.Windows.Forms.Padding(5);
             this.btnHeap.Name = "btnHeap";
-            this.btnHeap.Size = new System.Drawing.Size(147, 47);
+            this.btnHeap.Size = new System.Drawing.Size(127, 34);
             this.btnHeap.TabIndex = 7;
-            this.btnHeap.Text = "Heap";
+            this.btnHeap.Text = "HEAP";
             this.btnHeap.UseVisualStyleBackColor = true;
             this.btnHeap.Click += new System.EventHandler(this.btnHeap_Click);
             // 
             // btnShell
             // 
             this.btnShell.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShell.Location = new System.Drawing.Point(27, 370);
+            this.btnShell.Location = new System.Drawing.Point(32, 124);
             this.btnShell.Margin = new System.Windows.Forms.Padding(5);
             this.btnShell.Name = "btnShell";
-            this.btnShell.Size = new System.Drawing.Size(147, 47);
+            this.btnShell.Size = new System.Drawing.Size(127, 34);
             this.btnShell.TabIndex = 6;
-            this.btnShell.Text = "Shell";
+            this.btnShell.Text = "SHELL";
             this.btnShell.UseVisualStyleBackColor = true;
             this.btnShell.Click += new System.EventHandler(this.btnShell_Click);
             // 
             // btnLinkedlist
             // 
             this.btnLinkedlist.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLinkedlist.Location = new System.Drawing.Point(27, 85);
+            this.btnLinkedlist.Location = new System.Drawing.Point(38, 74);
             this.btnLinkedlist.Margin = new System.Windows.Forms.Padding(5);
             this.btnLinkedlist.Name = "btnLinkedlist";
-            this.btnLinkedlist.Size = new System.Drawing.Size(147, 47);
+            this.btnLinkedlist.Size = new System.Drawing.Size(127, 34);
             this.btnLinkedlist.TabIndex = 1;
-            this.btnLinkedlist.Text = "Linkedlist";
+            this.btnLinkedlist.Text = "LINKEDLIST";
             this.btnLinkedlist.UseVisualStyleBackColor = true;
             this.btnLinkedlist.Click += new System.EventHandler(this.btnLinkedlist_Click_1);
             // 
             // btnMerge
             // 
             this.btnMerge.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMerge.Location = new System.Drawing.Point(27, 313);
+            this.btnMerge.Location = new System.Drawing.Point(32, 80);
             this.btnMerge.Margin = new System.Windows.Forms.Padding(5);
             this.btnMerge.Name = "btnMerge";
-            this.btnMerge.Size = new System.Drawing.Size(147, 47);
+            this.btnMerge.Size = new System.Drawing.Size(127, 34);
             this.btnMerge.TabIndex = 5;
-            this.btnMerge.Text = "Merge";
+            this.btnMerge.Text = "MERGE";
             this.btnMerge.UseVisualStyleBackColor = true;
             this.btnMerge.Click += new System.EventHandler(this.btnMerge_Click);
             // 
             // btnList
             // 
             this.btnList.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnList.Location = new System.Drawing.Point(27, 256);
+            this.btnList.Location = new System.Drawing.Point(38, 206);
             this.btnList.Margin = new System.Windows.Forms.Padding(5);
             this.btnList.Name = "btnList";
-            this.btnList.Size = new System.Drawing.Size(147, 47);
+            this.btnList.Size = new System.Drawing.Size(127, 34);
             this.btnList.TabIndex = 4;
-            this.btnList.Text = "List";
+            this.btnList.Text = "LIST";
             this.btnList.UseVisualStyleBackColor = true;
             this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // btnQueue
             // 
             this.btnQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQueue.Location = new System.Drawing.Point(27, 199);
+            this.btnQueue.Location = new System.Drawing.Point(38, 162);
             this.btnQueue.Margin = new System.Windows.Forms.Padding(5);
             this.btnQueue.Name = "btnQueue";
-            this.btnQueue.Size = new System.Drawing.Size(147, 47);
+            this.btnQueue.Size = new System.Drawing.Size(127, 34);
             this.btnQueue.TabIndex = 3;
-            this.btnQueue.Text = "Queue";
+            this.btnQueue.Text = "QUEUE";
             this.btnQueue.UseVisualStyleBackColor = true;
             this.btnQueue.Click += new System.EventHandler(this.btnQueue_Click);
             // 
             // btnStack
             // 
             this.btnStack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStack.Location = new System.Drawing.Point(27, 142);
+            this.btnStack.Location = new System.Drawing.Point(38, 118);
             this.btnStack.Margin = new System.Windows.Forms.Padding(5);
             this.btnStack.Name = "btnStack";
-            this.btnStack.Size = new System.Drawing.Size(147, 47);
+            this.btnStack.Size = new System.Drawing.Size(127, 34);
             this.btnStack.TabIndex = 2;
-            this.btnStack.Text = "Stack";
+            this.btnStack.Text = "STACK";
             this.btnStack.UseVisualStyleBackColor = true;
             this.btnStack.Click += new System.EventHandler(this.btnStack_Click);
             // 
             // btnArray
             // 
             this.btnArray.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnArray.Location = new System.Drawing.Point(27, 28);
+            this.btnArray.Location = new System.Drawing.Point(38, 28);
             this.btnArray.Margin = new System.Windows.Forms.Padding(5);
             this.btnArray.Name = "btnArray";
-            this.btnArray.Size = new System.Drawing.Size(147, 47);
+            this.btnArray.Size = new System.Drawing.Size(127, 36);
             this.btnArray.TabIndex = 0;
-            this.btnArray.Text = "Array";
+            this.btnArray.Text = "ARRAY";
             this.btnArray.UseVisualStyleBackColor = true;
             this.btnArray.Click += new System.EventHandler(this.btnArray_Click);
+            // 
+            // btnInfo
+            // 
+            this.btnInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInfo.Location = new System.Drawing.Point(32, 36);
+            this.btnInfo.Margin = new System.Windows.Forms.Padding(5);
+            this.btnInfo.Name = "btnInfo";
+            this.btnInfo.Size = new System.Drawing.Size(127, 34);
+            this.btnInfo.TabIndex = 8;
+            this.btnInfo.Text = "INFO";
+            this.btnInfo.UseVisualStyleBackColor = true;
+            this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnInfo);
+            this.groupBox2.Controls.Add(this.btnHeap);
+            this.groupBox2.Controls.Add(this.btnMerge);
+            this.groupBox2.Controls.Add(this.btnShell);
+            this.groupBox2.Location = new System.Drawing.Point(6, 248);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(189, 229);
+            this.groupBox2.TabIndex = 9;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "SORT";
             // 
             // Form1
             // 
@@ -270,6 +296,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -290,6 +317,8 @@
         private System.Windows.Forms.Button btnMerge;
         private System.Windows.Forms.Button btnShell;
         private System.Windows.Forms.Button btnHeap;
+        private System.Windows.Forms.Button btnInfo;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
 

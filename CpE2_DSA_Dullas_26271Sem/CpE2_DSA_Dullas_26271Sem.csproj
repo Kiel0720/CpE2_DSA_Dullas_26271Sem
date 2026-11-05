@@ -64,6 +64,12 @@
     <Compile Include="Heap.Designer.cs">
       <DependentUpon>Heap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
     <Compile Include="Linkedlist.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Heap.resx">
       <DependentUpon>Heap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Linkedlist.resx">
       <DependentUpon>Linkedlist.cs</DependentUpon>

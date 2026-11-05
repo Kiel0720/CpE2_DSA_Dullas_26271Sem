@@ -28,6 +28,8 @@ namespace CpE2_DSA_Dullas_26271Sem
         public Form1()
         {
             InitializeComponent();
+            btnInfo.Click -= btnInfo_Click;
+            btnInfo.Click += btnInfo_Click;
             Button[] menuButtons =
              {
                  btnArray,
@@ -80,6 +82,8 @@ namespace CpE2_DSA_Dullas_26271Sem
                 };
             }
             InitButonAnimations(menuButtons);
+            StyleInfoButton();
+            ArrangeSidebar();
             this.StartPosition = FormStartPosition.CenterScreen;
             this.Resize += Form1_resize;
 
@@ -282,6 +286,67 @@ namespace CpE2_DSA_Dullas_26271Sem
             formShow(new Merge(), splitContainer2.Panel2);
         }
 
+        private const int BtnH = 38, Gap = 6, SidePad = 12, TopPad = 22, BottomPad = 10;
+
+        private int StackButtons(params Button[] items)
+        {
+            Control parent = items[0].Parent;
+            int y = TopPad;
+
+            foreach (Button b in items)
+            {
+                b.SetBounds(SidePad, y, parent.ClientSize.Width - SidePad * 2, BtnH);
+                b.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+                y += BtnH + Gap;
+            }
+
+            parent.Height = y - Gap + BottomPad;
+            return parent.Bottom;
+        }
+
+        private void ArrangeSidebar()
+        {
+            Control menuGroup = btnArray.Parent;
+            Control sortGroup = btnMerge.Parent;
+            Control sidebar = menuGroup.Parent;
+
+            // Move SORT and INFO out of the MENU group so it stops clipping them
+            if (sortGroup.Parent != sidebar) sortGroup.Parent = sidebar;
+            if (btnInfo.Parent != sidebar) btnInfo.Parent = sidebar;
+
+            sortGroup.Left = menuGroup.Left;
+            sortGroup.Width = menuGroup.Width;
+
+            int bottom = StackButtons(btnArray, btnLinkedlist, btnStack, btnQueue, btnList);
+
+            sortGroup.Top = bottom + 8;
+            bottom = StackButtons(btnMerge, btnShell, btnHeap);
+
+            btnInfo.Left = sortGroup.Left;
+            btnInfo.Width = sortGroup.Width;
+            btnInfo.Height = BtnH;
+            btnInfo.Top = bottom + 8;
+            btnInfo.BringToFront();
+        }
+
+        private void StyleInfoButton()
+        {
+            btnInfo.Text = "ℹ  INFO";
+            btnInfo.FlatStyle = FlatStyle.Flat;
+            btnInfo.FlatAppearance.BorderSize = 2;
+            btnInfo.FlatAppearance.BorderColor = Color.Yellow;
+            btnInfo.FlatAppearance.MouseOverBackColor = Color.FromArgb(128, 0, 0);
+            btnInfo.FlatAppearance.MouseDownBackColor = Color.FromArgb(80, 0, 0);
+            btnInfo.BackColor = Color.FromArgb(45, 45, 45);
+            btnInfo.ForeColor = Color.Yellow;
+            btnInfo.Font = new Font("Segoe UI", 11, FontStyle.Bold);
+            btnInfo.Cursor = Cursors.Hand;
+            btnInfo.UseVisualStyleBackColor = false;
+        }
+
+
+
+
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -310,6 +375,14 @@ namespace CpE2_DSA_Dullas_26271Sem
         private void btnHeap_Click(object sender, EventArgs e)
         {
             formShow(new Heap(), splitContainer2.Panel2);
+        }
+
+        private void btnInfo_Click(object sender, EventArgs e)
+        {
+            using (Info popup = new Info())
+            {
+                popup.ShowDialog(this);
+            }
         }
     }
 }
