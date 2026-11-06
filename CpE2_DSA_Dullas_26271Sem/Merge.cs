@@ -47,16 +47,8 @@ namespace CpE2_DSA_Dullas_26271Sem
         readonly Font smallFont = new Font("Segoe UI", 9F, FontStyle.Bold);
         readonly Font hintFont = new Font("Segoe UI", 10.5F);
 
-        Button[] buttons;
-        Label title;
-        string[] values = new string[0];
-        int[] ids;
-        float[] sx, sy, tx, ty;
-        Color[] sc, tc;
-        bool numeric, sliding, playing;
-        int shown;
-        float progress = 1f, slideMs;
-        long slideStart;
+        Button[] buttons; Label title;string[] values = new string[0];int[] ids;float[] sx, sy, tx, ty;Color[] sc, tc;
+        bool numeric, sliding, playing;int shown;float progress = 1f, slideMs;long slideStart;
 
         public Merge()
         {
